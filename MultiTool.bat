@@ -40,6 +40,10 @@ if %choice%==4 (
 	diskpart
 	exit
 )
+if %choice%==5 (
+open C:\Users\silve\Downloads\MultiTool-master\python\CodeCommand.py
+exit
+)
 if %choice%==x (
 	exit
 )
