@@ -1,43 +1,49 @@
 @echo off
 color 0a
 title Code Command
+
 echo.
-echo Welcome to Code Command
-echo Ver 0.0.2
+echo                             Welcome to Code Command
+echo                                   Ver 0.0.3
+echo --------------------------------------------------------------------------------
 echo.
-echo ------------------------
-echo ! For DDOS protical
-echo 2 Self Distruct protical
-echo 3 CMD
-echo 4 Diskpart (Admin Rights Required)
-echo 5 Close
-echo ------------------------
+echo  ------------------------------------------
+echo  ^| Tools                            [ x ] ^|
+echo  ------------------------------------------
+echo  ^| [ 1 ] For DDOS protocol                ^|
+echo  ^| [ 2 ] Self-destruct protocol           ^|
+echo  ^| [ 3 ] CMD                              ^|
+echo  ^| [ 4 ] Diskpart (Admin Rights Required) ^|
+echo  ^|                                        ^|
+echo  ^| [ x ] Exit                             ^|
+echo  ------------------------------------------
 echo.
 
-set /p choice="Enter Number"
+set /p choice="Enter Number> "
 if %choice%==1 (
-goto a
+	goto a
 )
 if %choice%==2 (
-goto loop
+	goto loop
 )
 if %choice%==3 (
-cls
-:cmd
-ver
-set /p var="%cd%>"
-%var%
-echo.
-goto cmd
+	cls
+	:cmd
+	ver
+	set /p var="%cd%>"
+	%var%
+	echo.
+	goto cmd
 )
 if %choice%==4 (
-cls
-diskpart
-exit
+	cls
+	diskpart
+	exit
 )
-if %choice%==5 (
-exit
+if %choice%==x (
+	exit
 )
+
 :a
 cls
 echo ============
