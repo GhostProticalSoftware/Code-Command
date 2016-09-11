@@ -1,9 +1,9 @@
 @echo off
 color 0a
-title Code Command
+title MultiTool
 
 echo.
-echo                             Welcome to Code Command
+echo                             Welcome to MultiTool
 echo                                   Ver 0.0.3
 echo --------------------------------------------------------------------------------
 echo.
