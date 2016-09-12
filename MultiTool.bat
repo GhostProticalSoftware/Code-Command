@@ -40,6 +40,10 @@ if %choice%==4 (
 	diskpart
 	exit
 )
+if %choice%==5 (
+	python %~dp0\python\CodeCommand.py %*
+	pause
+)
 if %choice%==x (
 	exit
 )

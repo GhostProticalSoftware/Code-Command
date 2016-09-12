@@ -2,13 +2,14 @@ import sys, os, glob
 
 modules = []
 mnames = []
+modulesdir = os.path.dirname(__file__) + "/modules/"
 
 def init():
 	print("Scanning for modules")
-	for file in os.listdir("./modules"):
+	for file in os.listdir(modulesdir):
 		if file.endswith(".py"):
 			modules.append(file)
-			with open("./modules/" + file, "r") as f:
+			with open(modulesdir + file, "r") as f:
 				n = f.readline()[10:].strip()
 				mnames.append(n.lower())
 				print("    " + n)
@@ -28,7 +29,7 @@ else:
 try:
 	m = modules[mnames.index(i.lower())]
 	
-	with open("./modules/" + m, "r") as f:
+	with open(modulesdir + m, "r") as f:
 		print(f.readline()[10:].strip())
 		print(f.readline()[13:].strip())
 		a = f.readline()[11:].strip().split(",")
@@ -41,7 +42,7 @@ try:
 		print("")
 		
 		arguments = " ".join(inputs)
-		exc = os.path.dirname(__file__) + "/modules/" + m + " " + arguments
+		exc = modulesdir + m + " " + arguments
 		print(exc)
 		os.system(exc)
 		
