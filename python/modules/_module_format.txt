@@ -1,0 +1,11 @@
+#MTModule: Module Name
+#Description: State what the module does
+#Arguments: input_value_1:input_type, input2:integer, input3:string, input4:boolean
+
+import sys
+input_value_1 = sys.argv[1]
+input2 = int(sys.argv[2])
+input3 = str(sys.argv[3])
+input4 = sys.argv[4].lower() in ["yes", "y", "true"]
+
+print("This is how you return your output.")
