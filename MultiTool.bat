@@ -23,6 +23,8 @@ echo.
 set /p choice="Enter Number> "
 if %choice%==1 (
 	ipconfig
+	cecho Press any key to exit
+	pause>nul
 )
 if %choice%==2 (
 	goto loop
