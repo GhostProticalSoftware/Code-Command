@@ -25,6 +25,7 @@ if %choice%==1 (
 	ipconfig
 	cecho Press any key to exit
 	pause
+	exit
 )
 if %choice%==2 (
 	goto loop
