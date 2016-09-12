@@ -41,7 +41,7 @@ if %choice%==4 (
 	exit
 )
 if %choice%==5 (
-	python %~dp0\python\CodeCommand.py %*
+	python %~dp0\python\MultiTool.py %*
 	pause
 )
 if %choice%==x (

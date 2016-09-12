@@ -1,4 +1,4 @@
-#CCModule: Hash
+#MTModule: Hash
 #Description: Returns the hash of a given string
 #Arguments: algorithm:string, data:string
 
