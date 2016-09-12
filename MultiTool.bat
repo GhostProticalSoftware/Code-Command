@@ -41,8 +41,8 @@ if %choice%==4 (
 	exit
 )
 if %choice%==5 (
-open C:\Users\silve\Downloads\MultiTool-master\python\CodeCommand.py
-exit
+	python %~dp0\python\CodeCommand.py %*
+	pause
 )
 if %choice%==x (
 	exit
