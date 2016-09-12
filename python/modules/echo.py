@@ -1,4 +1,4 @@
-#CCModule: Echo
+#MTModule: Echo
 #Description: Returns back the arguments passed
 #Arguments: data:string
 
