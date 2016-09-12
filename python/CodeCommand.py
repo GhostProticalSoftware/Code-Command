@@ -43,7 +43,6 @@ try:
 		
 		arguments = " ".join(inputs)
 		exc = modulesdir + m + " " + arguments
-		print(exc)
 		os.system(exc)
 		
 except:
