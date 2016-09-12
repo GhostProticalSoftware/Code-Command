@@ -1,9 +1,9 @@
 @echo off
 color 0a
-title Code Command
+title MultiTool
 
 echo.
-echo                             Welcome to Code Command
+echo                             Welcome to MultiTool
 echo                                   Ver 0.0.3
 echo --------------------------------------------------------------------------------
 echo.
@@ -39,6 +39,10 @@ if %choice%==4 (
 	cls
 	diskpart
 	exit
+)
+if %choice%==5 (
+	python %~dp0\python\CodeCommand.py %*
+	pause
 )
 if %choice%==x (
 	exit
